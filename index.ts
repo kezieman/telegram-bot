@@ -17,7 +17,6 @@ app.get("/", async (req, res) => {
 });
 
 app.get("/webhook", async (req, res) => {
-  res.send("Hello World!");
   const response = await axios.get(
     `https://api.telegram.org/bot${BOT_TOKEN}/setWebhook?url=${WEBHOOK_URL}`
   );
