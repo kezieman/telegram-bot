@@ -23,6 +23,12 @@ app.get("/webhook", async (req, res) => {
   res.send(JSON.stringify(response.data));
 });
 
+(async () => {
+  await axios.get(
+    `https://api.telegram.org/bot${BOT_TOKEN}/setWebhook?url=${WEBHOOK_URL}`
+  );
+})();
+
 app.listen(port, () => {
   console.log(`${APP_NAME} listening on port ${port}`);
 });
