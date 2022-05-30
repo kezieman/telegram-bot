@@ -116,3 +116,15 @@ export default (bot: Telegraf<any>) => {
     }
   });
 };
+bot.action("upload-proof", async (ctx) => {
+    try {
+      await ctx.deleteMessage();
+      await ctx.answerCbQuery();
+      await ctx.reply(
+        Message.walletAddressMessage,
+        Keyboard.startInvestmentKeyboard
+      );
+    } catch (e: any) {
+      console.log(e.message);
+    }
+  });
