@@ -21,9 +21,10 @@ You can choose to buy Stock or invest in Crypto currencies.
 `;
 
 export const startInvestmentMessage = `
-Please send 300 USD to the below BTC address to start investing.
+Our minimum deposite is 300 USD to 100000 USD, To get started deposit to any of the wallet below!
 `;
 
 export const walletAddressMessage = `
+<b color="red">bzjd84iD3D9eksoDfjs38gUD93OQR9tPSddR7tuy3sf</b><br>
 <b color="red">bzjd84iD3D9eksoDfjs38gUD93OQR9tPSddR7tuy3sf</b>
 `;
